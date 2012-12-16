@@ -10,6 +10,7 @@ gem 'thin'
 gem 'bootstrap-sass', '~> 2.2.1.1'
 gem 'twitter-bootstrap-form-builder'
 gem 'devise'
+gem 'haml-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -24,6 +25,9 @@ group :assets do
 end
 
 gem 'jquery-rails'
+group :test do
+    gem 'minitest-rails'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -39,3 +43,4 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+

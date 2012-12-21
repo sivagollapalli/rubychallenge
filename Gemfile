@@ -25,6 +25,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'execjs'
 group :test do
     gem 'minitest-rails'
 end

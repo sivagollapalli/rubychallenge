@@ -1,7 +1,8 @@
 Project.configure do |config|
   config.ruby = '1.9.3'         
+  config.environment_variables = { 'RAILS_ENV' => 'test' }
   config.timeout = 10.minutes                   
-  config.rake_task = 'test'
+  config.rake_task = 'ci'
   config.group = 'OpenSource'
   config.use_bundle_exec = true
 end

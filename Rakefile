@@ -6,7 +6,7 @@ require File.expand_path('../config/application', __FILE__)
 
 Rubychallenge::Application.load_tasks
 
-Rake::TestTask.new(:test) do |t|
+Rake::TestTask.new(:ci) do |t|
   t.libs << 'test'
   t.pattern = 'test/**/*_test.rb'
   t.verbose = true

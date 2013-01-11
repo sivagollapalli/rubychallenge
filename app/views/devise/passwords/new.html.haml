@@ -1,0 +1,5 @@
+= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post, :class => 'forgot-password' }) do |f|
+  %h2 Forgot your password?
+  = f.email_field :email, placeholder: 'Email'
+  %div= f.submit "Send Instructions", class: 'btn btn-primary btn-forgot-password'
+  = render "devise/shared/links"

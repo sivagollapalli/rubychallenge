@@ -1,0 +1,6 @@
+= form_for(resource, :as => resource_name, :url => confirmation_path(resource_name), :html => { :method => :post, :class => 'resend' }) do |f|
+  %h2 Resend Instructions
+  = f.email_field :email, placeholder: 'Email'
+  %div= f.submit "Resend", class: 'btn btn-primary btn-resend'
+
+  = render "devise/shared/links"

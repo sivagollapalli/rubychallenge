@@ -1,7 +1,7 @@
 = form_for(resource, :as => resource_name, :url => registration_path(resource_name), html: { class: 'signup'}) do |f|
   %h2 Sign up
-  = f.email_field :email
-  = f.password_field :password
-  = f.password_field :password_confirmation
-  %div= f.submit "Sign up", class: 'btn btn-primary' 
+  = f.email_field :email, placeholder: 'Email'
+  = f.password_field :password, placeholder: 'Password'
+  = f.password_field :password_confirmation, placeholder: 'Confirm Password'
+  %div= f.submit "Sign up", class: 'btn btn-primary btn-sign-up' 
   = render "devise/shared/links"

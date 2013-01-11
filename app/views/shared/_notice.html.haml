@@ -1,4 +1,11 @@
-- if flash[:notice]
-  = flash[:notice]
-- elsif flash[:error]
-  = flash[:error]
+:javascript
+  $(document).ready(function(){
+    var error = "#{flash[:alert]}"
+    var notice = "#{flash[:notice]}"
+    if(error != ""){
+      set_notification('error', error);
+    }
+    if(notice != ''){
+      set_notification('success', notice);
+    }
+  });
